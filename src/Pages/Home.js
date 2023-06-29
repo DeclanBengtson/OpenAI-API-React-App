@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Gym from "..//Images/Gym.jpg" ;
+
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -49,34 +51,14 @@ export default function App() {
       <div
         id='intro-example'
         className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')" }}
+        style={{ backgroundImage: "img src='..//Images/Gym.jpg'" }}
       >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-3'>Learn Bootstrap 5 with MDB</h1>
-              <h5 className='mb-4'>Best &amp; free guide of responsive web design</h5>
-              <MDBBtn
-                className="m-2"
-                tag="a"
-                outline
-                size="lg"
-                rel="nofollow"
-                target="_blank"
-                href='https://www.youtube.com/watch?v=c9B4TPnak1A'
-              >
-                Start tutorial
-              </MDBBtn>
-              <MDBBtn
-                className="m-2"
-                tag="a"
-                outline
-                size="lg"
-                target="_blank"
-                href='https://mdbootstrap.com/docs/standard/'
-              >
-                Download MDB UI KIT
-              </MDBBtn>
+              <h1 className='mb-3'>Exercise and diet planning tool</h1>
+              <h5 className='mb-4'>Responses generated utilising OpenAi's API</h5>
+              
             </div>
           </div>
         </div>
