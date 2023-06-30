@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
 
 //Chatgpt setup
-const OPENAI_API_KEY ="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";
+const OPENAI_API_KEY ="";
 
 export default function Workout() {
         const arrayItems = [{

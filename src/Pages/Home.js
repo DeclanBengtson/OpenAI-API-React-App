@@ -48,8 +48,6 @@ export default function App() {
         </MDBContainer>
       </MDBNavbar>
       
-        
-        
       <div id='bgimg' className='view' style={{ backgroundImage: `url(${Gym})`,height: '100vh' }} >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
