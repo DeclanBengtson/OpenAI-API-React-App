@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 //Chatgpt setup
-const OPENAI_API_KEY ="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";
+const OPENAI_API_KEY ="";
 
 export default function MealPlan() {
     const arrayItems = [{
