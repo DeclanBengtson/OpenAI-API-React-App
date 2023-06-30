@@ -1,6 +1,8 @@
 # Project Overview
 This project was developed as a personal project to practice the implementation of Open AI's API into a front-end application. In order to run the application locally a OpenAI API key is required. This can be sourced from their website [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 # Demo
+![LandingPage.png](/Docs/LandingPage.png)
+
 ![MealPlan.png](/Docs/MealPlan.png)
 
 
