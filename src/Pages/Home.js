@@ -47,18 +47,16 @@ export default function App() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-
-      <div
-        id='intro-example'
-        className='p-5 text-center bg-image'
-        style={{ backgroundImage: "img src='..//Images/Gym.jpg'" }}
-      >
+      
+        
+        
+      <div id='bgimg' className='view' style={{ backgroundImage: `url(${Gym})`,height: '100vh' }} >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
               <h1 className='mb-3'>Exercise and diet planning tool</h1>
               <h5 className='mb-4'>Responses generated utilising OpenAi's API</h5>
-              
+              <p></p>
             </div>
           </div>
         </div>

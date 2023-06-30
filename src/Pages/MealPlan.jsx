@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 //Chatgpt setup
-const OPENAI_API_KEY ="";
+const OPENAI_API_KEY ="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";
 
 export default function MealPlan() {
     const arrayItems = [{
@@ -40,13 +40,14 @@ export default function MealPlan() {
         setResult(response.data.choices[0].text);
       };
     return (
-        <div>
-            <p>Meal Plan Page</p>
-            <textarea className="text-area" cols={100} rows={10} onChange={(e) => setInput(e.target.value)}
-></textarea>
+        <div className='background'  style={{
+            backgroundColor: '#D3D3D3',  height : '100vh'}}>
+            <h2 className='Title'>Meal Plan Page</h2>
+            <p>Input a prompt in the box below describing the parameters of the meal plan you would like to develop.</p>
+            <textarea className="text-area" cols={100} rows={10} onChange={(e) => setInput(e.target.value)}></textarea>
             <p></p>
-            <button className="button" onClick={doStuff}>Generate Meal Plan</button>
-            <h3 className="result-text">{result.length > 0 ? result : ""}</h3>
+            <button type="button" class="btn btn-dark" onClick={doStuff}>Generate Meal Plan</button>
+            <h3 className="result-text" >{result.length > 0 ? result : ""}</h3>
         </div>
     );
 }
