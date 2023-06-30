@@ -1,7 +1,7 @@
 # Project Overview
 This project was developed as a personal project to practice the implementation of Open Ai's API into a front-end application. In order to run the application locally a OpenAi API key is required. This can be sourced from their website [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 # Demo
-![Demo.png](/Docs/Demo.png)
+![MealPlan.png](/Docs/MealPlan.png)
 
 
 # Getting Started with Create React App
