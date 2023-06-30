@@ -1,6 +1,8 @@
-import React from "react"
 import './App.css';
+import { Configuration, OpenAIApi } from "openai";
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { useState } from "react";
+
 
 //Pages
 import Home from "./Pages/Home"
@@ -11,10 +13,9 @@ import Workout from "./Pages/Workout";
 import Header from './Components/Header'
 import Footer from './Components/Footer';
 
-//API KEY
-const OPENAI_API_KEY="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";
 
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>
