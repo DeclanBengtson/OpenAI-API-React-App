@@ -10,7 +10,9 @@ import {
   MDBContainer,
   MDBIcon,
   MDBCollapse,
-  MDBBtn
+  MDBBtn,
+  MDBRow,
+  MDBCol
 } from 'mdb-react-ui-kit';
 
 export default function App() {
@@ -48,13 +50,31 @@ export default function App() {
         </MDBContainer>
       </MDBNavbar>
       
-      <div id='bgimg' className='view' style={{ backgroundImage: `url(${Gym})`,height: '100vh' }} >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+      <div id='bgimg' className='p-5 text-center bg-image' style={{ backgroundImage: `url(${Gym})`,height: '100vh' }} >
+        <div className='mask' style={{ height:'40vh' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-3'>Exercise and diet planning tool</h1>
-              <h5 className='mb-4'>Responses generated utilising OpenAi's API</h5>
-              <p></p>
+              <h1 className='mb-3'>Health Planning Tool</h1>
+              <h5 className='mb-4'>Utilising Open AI's API</h5>
+              <MDBBtn
+                color='light' rippleColor='dark'
+                className="m-2"
+                tag="a"
+                outline
+                size="lg"
+              >
+                Meal Plan
+              </MDBBtn>
+              <MDBBtn
+                color='light' rippleColor='dark'
+                className="m-2"
+                tag="a"
+                outline
+                size="lg"
+                target="_blank"
+              >
+                Exercise Plan
+              </MDBBtn>
             </div>
           </div>
         </div>

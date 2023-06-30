@@ -15,7 +15,7 @@ export default function App() {
   const [showNavSecond, setShowNavSecond] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
+    <MDBNavbar color="bg-primary" fixed="top" dark expand="md" scrolling transparent>
       <MDBContainer fluid>
         <MDBNavbarBrand href='/'>Planning Tool</MDBNavbarBrand>
         <MDBNavbarToggler
