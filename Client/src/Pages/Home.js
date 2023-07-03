@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Gym from "..//Images/Gym.jpg" ;
 
+import { useNavigate } from 'react-router-dom';
+
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -17,6 +19,7 @@ import {
 
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header>
@@ -62,6 +65,7 @@ export default function App() {
                 tag="a"
                 outline
                 size="lg"
+                onClick={() => navigate("/MealPlan")}
               >
                 Meal Plan
               </MDBBtn>
@@ -72,6 +76,7 @@ export default function App() {
                 outline
                 size="lg"
                 target="_blank"
+                onClick={() => navigate("/Workout")}
               >
                 Exercise Plan
               </MDBBtn>

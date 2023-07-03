@@ -41,12 +41,12 @@ export default function MealPlan() {
       };
     return (
         <div className='background'  style={{
-            backgroundColor: '#D3D3D3',  height : '100vh'}}>
-            <h2 className='Title'>Meal Plan Page</h2>
-            <p>Input a prompt in the box below describing the parameters of the meal plan you would like to develop.</p>
+            backgroundColor: '#202020',  height : '100vh'}}>
+            <h2 className='Title'>Meal Planner</h2>
+            <p className='para'>Input a prompt in the box below describing the parameters of the meal plan you would like to develop.</p>
             <textarea className="text-area" cols={100} rows={10} onChange={(e) => setInput(e.target.value)}></textarea>
             <p></p>
-            <button type="button" class="btn btn-dark" onClick={doStuff}>Generate Meal Plan</button>
+            <button type="button" class="btn btn-light" onClick={doStuff}>Generate Meal Plan</button>
             <h3 className="result-text" >{result.length > 0 ? result : ""}</h3>
         </div>
     );

@@ -8,6 +8,7 @@ import { useState } from "react";
 import Home from "./Pages/Home"
 import MealPlan from "./Pages/MealPlan";
 import Workout from "./Pages/Workout";
+import SavedPlans from "./Pages/SavedPlans";
 
 //Components
 import Header from './Components/Header'
@@ -24,6 +25,7 @@ function App() {
           <Route path ="/Home" element={<Home/>}/>
           <Route path ="/MealPlan" element={<MealPlan/>}/>
           <Route path ="/Workout" element={<Workout/>}/>
+          <Route path ="/SavedPlans" element={<SavedPlans/>}/>
           <Route path="*" element={<Home to="/Home" replace />} />
         </Routes>
       </BrowserRouter>

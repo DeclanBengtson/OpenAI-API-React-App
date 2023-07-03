@@ -1,6 +1,9 @@
 import React from "react"
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
+import "ag-grid-community/styles/ag-grid.css";
+import "ag-grid-community/styles/ag-theme-balham.css";
+
 
 //Chatgpt setup
 const OPENAI_API_KEY ="";
@@ -39,12 +42,12 @@ export default function Workout() {
         };
       return (
         <div className='background'  style={{
-            backgroundColor: '#D3D3D3',  height : '100vh'}}>
-            <h2 className='Title'>Exercise Plan Page</h2>
-            <p>Input a prompt in the box below describing the parameters of the exercise plan you would like to develop.</p>
+            backgroundColor: '#202020',  height : '100vh'}}>
+            <h2 className='Title'>Exercise Planner</h2>
+            <p className="para">Input a prompt in the box below describing the parameters of the exercise plan you would like to develop.</p>
             <textarea className="text-area" cols={100} rows={10} onChange={(e) => setInput(e.target.value)}></textarea>
             <p></p>
-            <button type="button" class="btn btn-dark" onClick={doStuff}>Generate Exercise Plan</button>
+            <button type="button" class="btn btn-light" onClick={doStuff}>Generate Exercise Plan</button>
             <h3 className="result-text" >{result.length > 0 ? result : ""}</h3>
         </div>
       );

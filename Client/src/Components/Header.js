@@ -29,6 +29,7 @@ export default function App() {
           <MDBNavbarNav>
             <MDBNavbarLink href='/MealPLan'>Meal Plan</MDBNavbarLink>
             <MDBNavbarLink href='/Workout'>Workout</MDBNavbarLink>
+            <MDBNavbarLink href='/SavedPlans'>Saved Plans</MDBNavbarLink>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
